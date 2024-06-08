@@ -1,0 +1,308 @@
+:root{
+    --dark:rgb(0, 205, 58);
+}
+
+body{
+    font-family: 'roboto' , sans-serif;
+    background-color: black;
+}
+
+/* start navbar */
+
+.navbar{
+    background-color: var(--dark);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: black;
+}
+
+.navbar .search{
+    border-left: 4px solid black;
+}
+
+nav .fa-slack{
+    font-size: 5rem !important;
+    color: black;
+}
+
+.navbar .navbar-toggler{
+    color: black;
+    border-color: black;
+    font-size: 2rem;
+}
+
+/* end navbar */
+
+/* start landing */
+
+.landing h1{
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.landing{
+    background-color: var(--dark);
+    min-height: calc(60vh - 72px);
+}
+
+.main-btn{
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 2rem;
+    margin: 2rem;
+    transition: 0.3s;
+}
+
+.main-btn:hover{
+    color: black;
+    background-color: white;
+}
+/* end landing */
+
+/* start features */
+
+.fa-slack{
+    color: var(--dark);
+    font-size: 5rem;
+}
+
+.main-title h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: bolder;
+    position: relative;
+}
+
+.main-title p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.main-title h2::after{
+    content: "";
+    position: absolute;
+    bottom: -3.5rem;
+    width: 20rem;
+    height: .5rem;
+    background-color: var(--dark);
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.features .icon-holder{
+    height: 17rem;
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number{
+    height: 12rem;
+}
+.features .icon-holder .icon{
+    height: 4rem;
+    color: var(--dark);
+}
+
+.features h3{
+    color: var(--dark);
+}
+
+/* end features */
+
+
+/* start my work */
+
+.my-work ul .active{
+    background-color: var(--dark);
+    color: black;
+    font-weight: bold;
+    border-radius: 5rem;
+}
+
+.my-work ul li{
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    cursor: pointer; 
+    transition: .3s;
+}
+
+.my-work ul li:not(.active){
+    color: white;
+}
+
+.my-work ul li:not(.active):hover{
+    color: var(--dark);
+}
+
+.box{
+
+    padding: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.box::before{
+    content: "Application";
+    position: absolute;
+    background-color: rgba(0, 205, 58, 0.717);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    transform: translateY(calc(100% + 5px));
+    transition: .7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+
+}
+
+.box:hover::before{
+    transform: translateX(0);
+}
+
+.sec-btn{
+    color: white;
+    background-color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 2rem;
+    margin: 2rem;
+    transition: 0.3s;
+}
+
+.sec-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+/* end my work */
+
+/* start stuff */
+
+.pic img{
+    height: 40rem;
+    width: 50rem;
+}
+
+.stuff{
+    background-color: var(--dark);
+}
+
+.stuff .main-title h2{
+    color: black;
+}
+
+.stuff .main-title p{
+    color: black;
+
+}
+
+.stuff .main-title h2::after{
+    content: "";
+    position: absolute;
+    bottom: -3.5rem;
+    width: 20rem;
+    height: .5rem;
+    background-color:black;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.stuff .container > p{
+    max-width: 50%;
+}
+
+/* end stuff */
+
+/* start team */
+
+.box2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box2::before{
+    content: "My Friend";
+    background-color: var(--dark);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+/* end team */
+
+/* start project */
+.project{
+    background-color: var(--dark);
+}
+/* end project */
+
+/* start subscribe */
+.subscibe{
+    background-color: var(--dark);
+}
+
+.subscibe .btn{
+
+        color: white;
+        background-color: black;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: 0.3s;
+}
+
+.subscibe .btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.subscibe .inp{
+    border: none;
+    border-bottom: white 2px solid;
+    outline: none;
+}
+
+.subscibe .inp::placeholder{
+    color: black;
+}
+
+/* end subscribe */
+
+
+/* footer */
+
+.links li ,.about li{
+    padding: .5rem 0 ;
+}
